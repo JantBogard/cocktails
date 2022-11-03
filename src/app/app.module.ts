@@ -1,3 +1,4 @@
+import { SelectedDirective } from './shared/directives/selected.directive';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -13,7 +14,8 @@ import { CocktailContainerComponent } from './cocktail-container/cocktail-contai
     HeaderComponent,
     CocktailListComponent,
     CocktailDetailsComponent,
-    CocktailContainerComponent
+    CocktailContainerComponent,
+    SelectedDirective
   ],
   imports: [
     BrowserModule

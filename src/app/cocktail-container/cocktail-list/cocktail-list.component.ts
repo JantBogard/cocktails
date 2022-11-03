@@ -1,4 +1,4 @@
-import { Cocktail } from './../../interfaces/Cocktail.interface';
+import { Cocktail } from '../../shared/interfaces/Cocktail.interface';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
@@ -8,6 +8,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class CocktailListComponent implements OnInit {
   @Input() public cocktails!: Cocktail[];
+  @Input() public selectedCocktail!: Cocktail;
   @Output() private changeCocktail: EventEmitter<number> = new EventEmitter();
 
   constructor() { }
